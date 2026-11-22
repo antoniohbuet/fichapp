@@ -376,7 +376,7 @@ body.msel main{padding-bottom:240px}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--gl:rgba(44,44,48,.48);--gl2:rgba(34,34,38,.82);--glb:rgba(255,255,255,.09);--glh:inset 0 1px 0 rgba(255,255,255,.11);--gls:0 6px 22px rgba(0,0,0,.4)}}
 :root[data-theme="dark"]{--gl:rgba(44,44,48,.48);--gl2:rgba(34,34,38,.82);--glb:rgba(255,255,255,.09);--glh:inset 0 1px 0 rgba(255,255,255,.11);--gls:0 6px 22px rgba(0,0,0,.4)}
 body::before{content:"";position:fixed;inset:-10%;z-index:-1;pointer-events:none;background:radial-gradient(38% 30% at 12% 8%,color-mix(in srgb,var(--ac) 24%,transparent),transparent 70%),radial-gradient(42% 34% at 92% 32%,color-mix(in srgb,var(--tele) 18%,transparent),transparent 70%),radial-gradient(48% 36% at 25% 78%,color-mix(in srgb,var(--vac) 15%,transparent),transparent 70%),radial-gradient(35% 28% at 85% 92%,color-mix(in srgb,var(--free) 14%,transparent),transparent 70%)}
-.card,.tile,.kpi,.st,#bigw .big,.wd:not(.done):not(.tele):not(.vac):not(.free),.gear,.ghost,.fb.fb2,.dsr,.dsi,.dsn{background:var(--gl)!important;-webkit-backdrop-filter:blur(22px) saturate(1.8);backdrop-filter:blur(22px) saturate(1.8);box-shadow:var(--glh),var(--gls),0 0 0 1px var(--glb)}
+.card,.tile,.kpi,.st,#bigw .big,.wd:not(.done):not(.tele):not(.vac):not(.free):not(.extra),.gear,.ghost,.fb.fb2,.dsr,.dsi,.dsn{background:var(--gl)!important;-webkit-backdrop-filter:blur(22px) saturate(1.8);backdrop-filter:blur(22px) saturate(1.8);box-shadow:var(--glh),var(--gls),0 0 0 1px var(--glb)}
 .wd.done,.wd.tele,.wd.vac,.wd.free{box-shadow:var(--glh),0 0 0 1px var(--glb)}
 .tile.on{box-shadow:inset 0 0 0 2px var(--ac),var(--gls)!important}
 .card .kpi,.card .wb,.sheet .kpi,.sheet .dsr,.sheet .dsi,.sheet .dsn{-webkit-backdrop-filter:none;backdrop-filter:none}
@@ -433,7 +433,7 @@ body::before{content:"";position:fixed;inset:-10%;z-index:-1;pointer-events:none
 .wsb::before,.mnv::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;background:linear-gradient(135deg,rgba(255,255,255,.95),rgba(255,255,255,.15) 40%,rgba(255,255,255,.05) 60%,rgba(255,255,255,.7));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
 .wsb::after,.mnv::after{content:"";position:absolute;inset:0;border-radius:inherit;background:radial-gradient(60% 120% at 18% -10%,rgba(255,255,255,.55),transparent 60%);pointer-events:none;z-index:-1}
 .wsb{border-radius:22px;padding:6px 4px;gap:2px}
-.wsb .wd:not(.done):not(.tele):not(.vac):not(.free){background:rgba(120,120,135,.1)!important;-webkit-backdrop-filter:none;backdrop-filter:none;box-shadow:inset 0 1px 0 rgba(255,255,255,.8)}
+.wsb .wd:not(.done):not(.tele):not(.vac):not(.free):not(.extra){background:rgba(120,120,135,.1)!important;-webkit-backdrop-filter:none;backdrop-filter:none;box-shadow:inset 0 1px 0 rgba(255,255,255,.8)}
 .wsb .wd.done,.wsb .wd.tele,.wsb .wd.vac,.wsb .wd.free{box-shadow:inset 0 1px 0 rgba(255,255,255,.55)}
 .wsb .wd{border-radius:14px}
 .wsa,.mnv button{border-radius:999px!important;transition:transform .2s cubic-bezier(.3,1.5,.5,1)}
@@ -443,7 +443,7 @@ body::before{content:"";position:fixed;inset:-10%;z-index:-1;pointer-events:none
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .wsb,:root:not([data-theme="light"]) .mnv{background:rgba(40,40,44,.35)!important;box-shadow:inset 0 1px 1px rgba(255,255,255,.22),inset 0 -1px 1px rgba(255,255,255,.06),inset 0 0 14px rgba(255,255,255,.05),0 10px 30px rgba(0,0,0,.45)}
 :root:not([data-theme="light"]) .wsb::before,:root:not([data-theme="light"]) .mnv::before{background:linear-gradient(135deg,rgba(255,255,255,.4),rgba(255,255,255,.06) 40%,rgba(255,255,255,.02) 60%,rgba(255,255,255,.25))}
 :root:not([data-theme="light"]) .wsb::after,:root:not([data-theme="light"]) .mnv::after{background:radial-gradient(60% 120% at 18% -10%,rgba(255,255,255,.14),transparent 60%)}
-:root:not([data-theme="light"]) .wsb .wd:not(.done):not(.tele):not(.vac):not(.free){background:rgba(255,255,255,.07)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.12)}
+:root:not([data-theme="light"]) .wsb .wd:not(.done):not(.tele):not(.vac):not(.free):not(.extra){background:rgba(255,255,255,.07)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.12)}
 :root:not([data-theme="light"]) .mnv button{background:rgba(255,255,255,.13)!important;box-shadow:inset 0 1px 1px rgba(255,255,255,.3),0 2px 8px rgba(0,0,0,.3)}}
 
 :root{--lgR1:rgba(255,255,255,.95);--lgR2:rgba(255,255,255,.65);--lgIn:rgba(255,255,255,.55);--lgBg:rgba(255,255,255,.14);--lgSh:0 8px 28px rgba(30,20,50,.14),0 1px 3px rgba(0,0,0,.08);--lgSp:rgba(255,255,255,.6)}
@@ -454,7 +454,7 @@ body::before{content:"";position:fixed;inset:-10%;z-index:-1;pointer-events:none
 .tabs::after,.wsb::after,.mnv::after{background:radial-gradient(40% 70% at 22% 0%,var(--lgSp),transparent 70%)!important;opacity:.55;mix-blend-mode:soft-light}
 .tind,.mnv button,.wsb .wd{-webkit-backdrop-filter:blur(3px) saturate(1.6) brightness(1.06)!important;backdrop-filter:blur(3px) saturate(1.6) brightness(1.06)!important}
 .tind,.mnv button{background:color-mix(in srgb,var(--ink) 4%,transparent)!important;box-shadow:inset 1.5px 1.5px 1px -1px var(--lgR1),inset -1.5px -1.5px 1px -1px var(--lgR2),inset 0 0 0 .5px var(--lgR2),inset 0 8px 10px -9px var(--lgIn),inset 0 -8px 12px -9px var(--lgIn),0 3px 10px rgba(0,0,0,.1)!important}
-.wsb .wd:not(.done):not(.tele):not(.vac):not(.free){background:color-mix(in srgb,var(--ink) 4%,transparent)!important}
+.wsb .wd:not(.done):not(.tele):not(.vac):not(.free):not(.extra){background:color-mix(in srgb,var(--ink) 4%,transparent)!important}
 .wsb .wd{box-shadow:inset 1.5px 1.5px 1px -1px var(--lgR1),inset -1.5px -1.5px 1px -1px var(--lgR2),inset 0 0 0 .5px color-mix(in srgb,var(--lgR2) 60%,transparent),inset 0 7px 9px -8px var(--lgIn)!important}
 .wsb .wd.done{background:color-mix(in srgb,var(--ac) 22%,transparent)!important}.wsb .wd.tele{background:color-mix(in srgb,var(--tele) 22%,transparent)!important}.wsb .wd.vac{background:color-mix(in srgb,var(--vac) 22%,transparent)!important}.wsb .wd.free{background:color-mix(in srgb,var(--free) 24%,transparent)!important}
 body::before{background:radial-gradient(42% 26% at 10% 6%,color-mix(in srgb,var(--ac) 30%,transparent),transparent 70%),radial-gradient(40% 24% at 95% 14%,color-mix(in srgb,var(--tele) 26%,transparent),transparent 70%),radial-gradient(48% 36% at 25% 78%,color-mix(in srgb,var(--vac) 18%,transparent),transparent 70%),radial-gradient(40% 26% at 88% 96%,color-mix(in srgb,var(--free) 20%,transparent),transparent 70%),radial-gradient(40% 22% at 50% 100%,color-mix(in srgb,var(--ac) 18%,transparent),transparent 70%)!important}
@@ -465,12 +465,12 @@ body::before{background:radial-gradient(42% 26% at 10% 6%,color-mix(in srgb,var(
 .wsb .wsr{gap:3px!important}
 .wsa{width:32px!important;height:32px!important;border-radius:50%!important;align-self:center;background:color-mix(in srgb,var(--ink) 4%,transparent)!important;-webkit-backdrop-filter:blur(3px) saturate(1.6) brightness(1.06);backdrop-filter:blur(3px) saturate(1.6) brightness(1.06);box-shadow:inset 1.5px 1.5px 1px -1px var(--lgR1),inset -1.5px -1.5px 1px -1px var(--lgR2),inset 0 0 0 .5px var(--lgR2),inset 0 8px 10px -9px var(--lgIn),inset 0 -8px 12px -9px var(--lgIn),0 3px 10px rgba(0,0,0,.1)!important}
 .wsa svg{width:17px!important;height:17px!important}
-.wsb .wd:not(.done):not(.tele):not(.vac):not(.free){background:transparent!important;box-shadow:none!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+.wsb .wd:not(.done):not(.tele):not(.vac):not(.free):not(.extra){background:transparent!important;box-shadow:none!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
 .wsb .wd{border-radius:16px!important;padding:6px 0 9px!important}
 .wsb .wd.done,.wsb .wd.tele,.wsb .wd.vac,.wsb .wd.free{box-shadow:inset 1.5px 1.5px 1px -1px var(--lgR1),inset -1.5px -1.5px 1px -1px var(--lgR2),inset 0 0 0 .5px var(--lgR2),inset 0 9px 10px -9px var(--lgIn),inset 0 -9px 12px -9px var(--lgIn),0 4px 12px -4px var(--gc)!important}
 .wsb .wd.done{--gc:color-mix(in srgb,var(--ac) 55%,transparent)}.wsb .wd.tele{--gc:color-mix(in srgb,var(--tele) 55%,transparent)}.wsb .wd.vac{--gc:color-mix(in srgb,var(--vac) 55%,transparent)}.wsb .wd.free{--gc:color-mix(in srgb,var(--free) 55%,transparent)}
-.wsb .wd.we:not(.done):not(.tele):not(.vac):not(.free){opacity:.75}
-html:root:not(#z) .wsb .wd:not(.done):not(.tele):not(.vac):not(.free){background:transparent!important;box-shadow:none!important}
+.wsb .wd.we:not(.done):not(.tele):not(.vac):not(.free):not(.extra){opacity:.75}
+html:root:not(#z) .wsb .wd:not(.done):not(.tele):not(.vac):not(.free):not(.extra){background:transparent!important;box-shadow:none!important}
 .wsr{position:relative}
 .wlen{position:absolute;left:0;top:0;width:0;height:0;border-radius:19px;pointer-events:none;z-index:2;opacity:0;transition:transform .55s cubic-bezier(.3,1.35,.45,1),opacity .2s;background:rgba(255,255,255,.16);-webkit-backdrop-filter:brightness(1.12) saturate(1.6);backdrop-filter:brightness(1.12) saturate(1.6);box-shadow:inset 2px 2px 1px -1px var(--lgR1),inset -2px -2px 1px -1px var(--lgR2),inset 0 0 0 1px var(--lgR2),inset 0 10px 12px -10px var(--lgIn),inset 0 -10px 14px -10px var(--lgIn),0 8px 20px rgba(0,0,0,.2),0 0 0 .5px rgba(0,0,0,.1)}
 .wlen.sq{animation:sq .55s cubic-bezier(.3,1.2,.5,1)}
@@ -512,6 +512,66 @@ html:root:not(#z) .mnv{background:transparent!important;box-shadow:none!importan
 .cal button.we{opacity:.75}
 .cal button.note::before{border-radius:0 14px 0 5px!important}
 .cal button.done,.cal button.tele,.cal button.vac,.cal button.free{--gc:transparent!important}
+:root{--ext:#0E9BA8}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ext:#3FD0E0}}
+:root[data-theme="dark"]{--ext:#3FD0E0}
+.seg button.on[data-t=extra]{background:var(--ext)}
+.cal button.extra{background:var(--ext);color:#fff}
+.cal button.tele.done::after,.cal button.vac.done::after,.cal button.extra.done::after{background:#fff}
+@media (prefers-color-scheme:dark){.cal button.tele,.cal button.vac,.cal button.extra{color:#1B120B}.cal button.tele.done::after,.cal button.vac.done::after,.cal button.extra.done::after{background:#1B120B}}
+.cal button.extra{background:color-mix(in srgb,var(--ext) 22%,transparent);color:var(--ink);font-weight:700}
+.wd.extra{background:color-mix(in srgb,var(--ext) 24%,transparent)}
+.wd.extra b{color:var(--ext)}
+.cal button.extra{color:var(--ext)}
+.wd.extra small{color:var(--ext)}
+.mt-extra,.dt-extra{color:var(--ext)!important}
+.dt-extra.on{background:var(--ext)}
+.tg-extra{background:color-mix(in srgb,var(--ext) 18%,transparent);color:var(--ext)}
+.ti-extra svg{color:var(--ext)}
+.cal button.extra.note::before{background:linear-gradient(225deg,var(--sf) 50%,color-mix(in srgb,var(--ext) 65%,transparent) 50%)}
+.cal button.today.extra::after{background:var(--ext)!important}
+.wd.td.extra::after{background:var(--ext)}
+.wd.done,.wd.tele,.wd.vac,.wd.extra{box-shadow:var(--glh),0 0 0 1px var(--glb)}
+.cal button.extra.note::before{background:linear-gradient(225deg,transparent 50%,color-mix(in srgb,var(--ext) 65%,transparent) 50%)}
+.wsb .wd.done,.wsb .wd.tele,.wsb .wd.vac,.wsb .wd.extra{box-shadow:inset 0 1px 0 rgba(255,255,255,.55)}
+.wsb .wd.extra{background:color-mix(in srgb,var(--ext) 24%,transparent)!important}
+.wsb .wd.done,.wsb .wd.tele,.wsb .wd.vac,.wsb .wd.extra{box-shadow:inset 1.5px 1.5px 1px -1px var(--lgR1),inset -1.5px -1.5px 1px -1px var(--lgR2),inset 0 0 0 .5px var(--lgR2),inset 0 9px 10px -9px var(--lgIn),inset 0 -9px 12px -9px var(--lgIn),0 4px 12px -4px var(--gc)!important}
+.wsb .wd.extra{--gc:color-mix(in srgb,var(--ext) 55%,transparent)}
+.wk-extra .rg .rt{stroke:color-mix(in srgb,var(--ext) 40%,transparent)}
+.dpp.tg-extra svg:first-child{color:var(--ext)}
+.dpp.on.tg-extra{background:color-mix(in srgb,var(--ext) 22%,transparent);color:var(--ext)}
+.cal button.done,.cal button.tele,.cal button.vac,.cal button.extra{box-shadow:inset 1.5px 1.5px 1px -1px var(--lgR1),inset -1.5px -1.5px 1px -1px var(--lgR2),inset 0 0 0 .5px var(--lgR2),inset 0 9px 10px -9px var(--lgIn),inset 0 -9px 12px -9px var(--lgIn),0 4px 12px -4px var(--gc)}
+.cal button.extra{background:color-mix(in srgb,var(--ext) 24%,transparent);--gc:color-mix(in srgb,var(--ext) 55%,transparent)}
+.cal button.done,.cal button.tele,.cal button.vac,.cal button.extra{--gc:transparent!important}
+.xtile{grid-column:1/-1;display:flex;align-items:center;gap:14px}
+.xic{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;flex:none;background:color-mix(in srgb,var(--ext) 18%,transparent);color:var(--ext);box-shadow:inset 1.5px 1.5px 1px -1px var(--lgR1),inset -1.5px -1.5px 1px -1px var(--lgR2)}
+.xic svg{width:24px;height:24px}
+.xtx>b{display:block;font-size:22px;letter-spacing:-.4px;margin:1px 0}
+.xend{color:var(--ext)}
+.wk-extra .rg .rt{stroke:color-mix(in srgb,var(--ext) 40%,transparent)}
+.mst{grid-template-columns:repeat(5,1fr)!important}
+.mst button span{font-size:11px}
+.dpk .dpp.tg-extra{grid-column:1/-1}
+:root{--warn:#F08A00}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--warn:#FFB020}}
+:root[data-theme="dark"]{--warn:#FFB020}
+.wd.pend,.cal button.pend{outline:1.6px dashed var(--warn);outline-offset:-2px}
+.pb{position:absolute;top:2px;left:2px;width:14px;height:14px;border-radius:50%;background:var(--warn);color:#fff;font-size:10px;font-weight:800;font-style:normal;display:grid;place-items:center;line-height:1;box-shadow:0 1px 3px rgba(0,0,0,.2);pointer-events:none}
+.cal button .pb{top:1px;left:1px;width:13px;height:13px;font-size:9.5px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .pb{color:#1B120B}}
+.pbn{display:flex;align-items:center;gap:8px;width:100%;border:0;border-radius:14px;padding:11px 14px;margin:-4px 0 14px;font:inherit;font-size:14px;font-weight:700;color:var(--ink);cursor:pointer;background:color-mix(in srgb,var(--warn) 14%,transparent);box-shadow:inset 1.5px 1.5px 1px -1px var(--lgR1),inset -1.5px -1.5px 1px -1px var(--lgR2),inset 0 0 0 1px color-mix(in srgb,var(--warn) 35%,transparent);text-align:left;transition:transform .2s cubic-bezier(.3,1.5,.5,1)}
+.pbn:active{transform:scale(.98)}
+.pbn>svg:first-child{width:18px;height:18px;color:var(--warn);flex:none}
+.pbn span{flex:1}
+.pbn em{font-style:normal;color:var(--warn)}
+.pbn>svg:last-child{width:16px;height:16px;color:var(--warn);margin-left:-4px}
+.mnv+.pbn{margin-top:0}
+.pwn{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--warn);margin:-6px 4px 12px}
+.pwn svg{width:17px;height:17px;flex:none}
+.ds .pwn{margin:-4px 2px 10px}
+.leg i.lgp{border-radius:3px;outline:1.5px dashed var(--warn);outline-offset:-1.5px;background:none}
+.wd .pb{top:-5px;left:-4px}
+.cal button .pb{top:-3px;left:-3px}
 </style>
 </head>
 <body>
@@ -537,14 +597,14 @@ var fd=function(m){var s=m<0?"−":"";m=Math.abs(Math.round(m));return s+Math.fl
 var fsg=function(m){return Math.round(m)===0?"0 min":(m>0?"+":"")+fd(m)};
 var cls=function(m){return Math.round(m)>0?"pos":Math.round(m)<0?"neg":""};
 var now=new Date();sel=dk(now);cm=new Date(now.getFullYear(),now.getMonth(),1);
-function info(k){var r=S.days[k]||{},d=pk(k),we=d.getDay()%6===0,type=r.type||"office",off=we||type==="vac"||type==="free",i=tm(r.in),o=tm(r.out);
+function info(k){var r=S.days[k]||{},d=pk(k),we=d.getDay()%6===0,type=r.type||"office",off=we||type==="vac"||type==="free"||type==="extra",i=tm(r.in),o=tm(r.out);
 var ls=tm(r.ls),le=tm(r.le),lr=ls!=null&&le!=null&&le>=ls,l=lr?le-ls:0;var w=(i!=null&&o!=null)?Math.max(0,o-i-l):null;
 return{k:k,d:d,r:r,type:type,we:we,off:off,exp:off?0:(d.getDay()===5?S.settings.vi:S.settings.lj),i:i,o:o,w:w,l:l,lr:lr}}
 function firstDay(){var m=null;for(var k in S.days){var r=S.days[k];if((r.in||r.out)&&(m===null||k<m))m=k}return m}
-function range(a,b){var R={w:0,t:0,tt:0,sal:0,n:0,si:0,so:0,nt:0,nv:0,no:0},d=new Date(a),td=dk(new Date()),f0=firstDay();
+function range(a,b){var R={w:0,t:0,tt:0,sal:0,n:0,si:0,so:0,nt:0,nv:0,no:0,nx:0},d=new Date(a),td=dk(new Date()),f0=firstDay();
 while(d<=b){var k=dk(d),x=info(k);R.tt+=x.exp;
 if(f0&&k>=f0&&(k<td||(k===td&&x.w!=null))){R.t+=x.exp;R.sal+=(x.w||0)-x.exp}
-if(!x.we){if(x.type==="tele")R.nt++;else if(x.type==="vac")R.nv++;else if(x.type==="office"&&x.w!=null)R.no++}
+if(!x.we){if(x.type==="tele")R.nt++;else if(x.type==="vac")R.nv++;else if(x.type==="extra")R.nx++;else if(x.type==="office"&&x.w!=null)R.no++}
 if(x.w!=null){R.w+=x.w;R.n++;R.si+=x.i;R.so+=x.o}
 d.setDate(d.getDate()+1)}return R}
 function wk(k){var d=pk(k),o=(d.getDay()+6)%7,a=new Date(d.getFullYear(),d.getMonth(),d.getDate()-o),b=new Date(a.getFullYear(),a.getMonth(),a.getDate()+6);return[a,b]}
@@ -560,8 +620,8 @@ document.getElementById("app").innerHTML=h;bind();mvInd();if(view==="hoy")mvLens
 function vHoy(){
 var x=info(sel),T={office:"Oficina",tele:"Teletrabajo",vac:"Vacaciones",free:"Festivo"};
 var title=sel===dk(new Date())?x.d.toLocaleDateString("es-ES",{weekday:"long",day:"numeric",month:"long"}):x.d.toLocaleDateString("es-ES",x.d.getFullYear()===new Date().getFullYear()?{day:"numeric",month:"long"}:{day:"numeric",month:"long",year:"numeric"});
-var h='<div class="wsb"><button class="wsa" data-w="-7" aria-label="Semana anterior">'+sv('<path d="M15 6l-6 6 6 6"/>')+'</button><div class="wsr" id="wsr">'+wsH()+'<span id="wlen" class="wlen" aria-hidden="true"></span></div><button class="wsa" data-w="7" aria-label="Semana siguiente">'+sv('<path d="M9 6l6 6-6 6"/>')+'</button></div>';
-if(x.off){var MS=x.type==="vac"?["¡Disfruta de las vacaciones, Antonio!","Hoy toca descansar"]:x.type==="free"?["¡Feliz festivo, Antonio!","Hoy no se trabaja"]:["¡Pasa un buen finde, Antonio!","Hoy no toca fichar"];h+='<div class="big rgw gw wkd wk-'+x.type+'">'+tagH(x)+'<div class="rgx"><div class="rg"><svg viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="90" class="rt"/></svg></div><div class="gt"><b>'+MS[0]+'</b><small>'+MS[1]+'</small></div></div></div>'}
+var h='<div class="wsb"><button class="wsa" data-w="-7" aria-label="Semana anterior">'+sv('<path d="M15 6l-6 6 6 6"/>')+'</button><div class="wsr" id="wsr">'+wsH()+'<span id="wlen" class="wlen" aria-hidden="true"></span></div><button class="wsa" data-w="7" aria-label="Semana siguiente">'+sv('<path d="M9 6l6 6-6 6"/>')+'</button></div>';var PL=pendList();h+=pbH(PL.length,PL.length+(PL.length===1?" día sin fichar":" días sin fichar"),"pnext");h+=pwH(sel);
+if(x.off){var MS=x.type==="extra"?["Día extraordinario, Antonio","Se suma un día al final del contrato"]:x.type==="vac"?["¡Disfruta de las vacaciones, Antonio!","Hoy toca descansar"]:x.type==="free"?["¡Feliz festivo, Antonio!","Hoy no se trabaja"]:["¡Pasa un buen finde, Antonio!","Hoy no toca fichar"];h+='<div class="big rgw gw wkd wk-'+x.type+'">'+tagH(x)+'<div class="rgx"><div class="rg"><svg viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="90" class="rt"/></svg></div><div class="gt"><b>'+MS[0]+'</b><small>'+MS[1]+'</small></div></div></div>'}
 else if(x.off){h+='<div class="card offc">'+tagH(x)+'<div class="empty">'+(x.we&&x.type!=="vac"&&x.type!=="free"?"Fin de semana: sin jornada.":"Este día no cuenta como jornada.")+'</div></div>'}
 else{
 var ah=function(id,a){return'<div class="ctl">'+tin(id,x.r[id]||"")+'<button class="ghost nw" data-a="'+a+'" aria-label="Poner la hora actual" title="Ahora"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></button></div>'};
@@ -572,7 +632,7 @@ if(ed){h+='<div class="card edc">';if(ed==="lunch")h+='<div class="tr"><span cla
 h+='<div class="card" id="wkw">'+wkH()+'</div>';
 h+='<details class="card lunch" id="notd"'+(no?" open":"")+'><summary><span class="ni">'+sv('<path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/>')+'</span><span class="tl" id="nlb">'+((x.r.c||"").trim()?"Nota":"Añadir nota")+'</span><span class="mut" id="nsum">'+nsT(x)+'</span></summary><div style="padding:0 14px 14px"><textarea id="nt" rows="3" placeholder="Algo importante que apuntar">'+esc(x.r.c||"")+'</textarea></div></details>';
 return h}
-var TN={office:"Oficina",tele:"Teletrabajo",vac:"Vacaciones",free:"Festivo"};
+var TN={office:"Oficina",tele:"Teletrabajo",vac:"Vacaciones",free:"Festivo",extra:"Extraordinario"};
 var tmo=false;
 function tagH(x){return'<div class="tgr"><button class="tag tg-'+x.type+(tmo?" op":"")+'" data-tsel="1" aria-haspopup="true" aria-expanded="'+tmo+'" aria-label="Cambiar tipo de día">'+sv(TI[x.type])+'<span>'+TN[x.type]+'</span>'+sv('<path d="M6 9l6 6 6-6"/>')+'</button>'+(tmo?'<div class="tmn" role="menu">'+Object.keys(TN).map(function(t){return'<button role="menuitem" data-tt="'+t+'" class="tmi ti-'+t+(x.type===t?" on":"")+'">'+sv(TI[t])+'<span>'+TN[t]+'</span>'+(x.type===t?sv('<path d="M5 12l5 5L20 7"/>'):'')+'</button>'}).join("")+'</div>':'')+'</div>'}
 function openType(){var o=document.getElementById("ovl"),x=info(sel);o.classList.add("bt");o.innerHTML='<div class="sheet ds"><div class="sh"><b>Tipo de día</b><button id="clo">Cerrar</button></div><div class="dty">'+Object.keys(TN).map(function(t){return'<button data-dt="'+t+'" class="dt-'+t+(x.type===t?" on":"")+'">'+sv(TI[t])+'<span>'+TN[t]+'</span></button>'}).join("")+'</div></div>';o.classList.add("on");
@@ -584,6 +644,11 @@ function npx(){document.querySelectorAll(".npv").forEach(function(e){e.remove()}
 function mvInd(){var t=document.querySelector(".tabs"),a=t&&t.querySelector("button.on"),i=document.getElementById("tind");if(a&&i){i.style.width=a.offsetWidth+"px";i.style.transform="translateX("+a.offsetLeft+"px)"}}
 window.addEventListener("resize",mvInd);
 var lensX=null;
+function pendSt(k){var td=dk(new Date());if(k>=td||k<S.settings.ps)return null;var f0=firstDay();if(!f0||k<f0)return null;var x=info(k);if(x.off)return null;var r=x.r;if(r.in&&r.out)return null;return !r.in&&!r.out?"none":!r.in?"in":"out"}
+function pendList(a,b){var f0=firstDay(),L=[];if(!f0)return L;var s0=f0>S.settings.ps?f0:S.settings.ps,d=pk(a&&a>s0?a:s0),e=b?pk(b):new Date(),td=dk(new Date());while(true){var k=dk(d);if(k>=td||d>e)break;if(pendSt(k))L.push(k);d.setDate(d.getDate()+1)}return L}
+var PM={none:"No fichaste este día",in:"Falta fichar la entrada",out:"Falta fichar la salida"};
+function pwH(k){var p=pendSt(k);return p?'<div class="pwn">'+sv('<path d="M12 3l10 18H2z"/><path d="M12 10v5M12 18v.01"/>')+'<span>'+PM[p]+'</span></div>':''}
+function pbH(n,txt,act){return n?'<button class="pbn" data-a="'+act+'">'+sv('<path d="M12 3l10 18H2z"/><path d="M12 10v5M12 18v.01"/>')+'<span>'+txt+'</span><em>Revisar</em>'+sv('<path d="M9 6l6 6-6 6"/>')+'</button>':''}
 function mvLens(){var w=document.getElementById("wsr"),l=document.getElementById("wlen"),a=w&&w.querySelector(".wd.sl");if(!l)return;if(!a){l.style.opacity=0;lensX=null;return}
 var x=a.offsetLeft-3,y=a.offsetTop-3;l.style.transition="none";l.style.width=(a.offsetWidth+6)+"px";l.style.height=(a.offsetHeight+6)+"px";l.style.transform="translate("+(lensX==null?x:lensX)+"px,"+y+"px)";l.style.opacity=1;void l.offsetWidth;
 l.style.transition="";if(lensX!=null&&lensX!==x){l.classList.remove("sq");void l.offsetWidth;l.classList.add("sq")}l.style.transform="translate("+x+"px,"+y+"px)";lensX=x}
@@ -593,7 +658,7 @@ function cap(t){return t.charAt(0).toUpperCase()+t.slice(1)}
 function dayS(k,pop){var x=info(k),r=x.r;
 var h='<div class="sh"><b>'+cap(x.d.toLocaleDateString("es-ES",{weekday:"long",day:"numeric",month:"long"}))+'</b><button id="clo">Cerrar</button></div>';
 h+='<div class="dpk">'+Object.keys(TN).map(function(t){var on=x.type===t;return'<button data-dt="'+t+'" class="dpp tg-'+t+(on?" on":"")+(on&&pop?" pop":"")+'">'+sv(TI[t])+'<span>'+TN[t]+'</span>'+(on?sv('<path d="M5 12l5 5L20 7"/>'):'')+'</button>'}).join("")+'</div>';
-if(x.off){h+='<div class="dmi">'+(x.type==="vac"?"Día de vacaciones · no cuenta como jornada":x.type==="free"?"Festivo · no cuenta como jornada":"Fin de semana · sin jornada")+'</div>'}
+h+=pwH(k);if(x.off){h+='<div class="dmi">'+(x.type==="extra"?"Extraordinario · se suma un día al final del contrato":x.type==="vac"?"Día de vacaciones · no cuenta como jornada":x.type==="free"?"Festivo · no cuenta como jornada":"Fin de semana · sin jornada")+'</div>'}
 else{var c=function(l,v,cl){return'<div><small>'+l+'</small><b class="'+(cl||"")+(v==="—"?" mut":"")+'">'+v+'</b></div>'};
 h+='<div class="dst">'+c("Entrada",r.in||"—")+c("Comida",x.lr?x.l+"m":"—")+c("Salida",r.out||"—")+(x.w!=null?c("Total",hm(x.w))+c("Saldo",csg(x.w-x.exp),cls(x.w-x.exp)):c("Total","—")+c("Saldo","—"))+'</div>'}
 if((r.c||"").trim())h+='<div class="dsn">'+sv('<path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/>')+'<span>'+esc(r.c)+'</span></div>';
@@ -606,8 +671,8 @@ document.getElementById("dso").onclick=function(){closeDay();sel=k;ed=null;view=
 function closeDay(){var o=document.getElementById("ovl");o.classList.remove("on","bt");o.innerHTML=""}
 function wsH(){var W=wk(sel),td=dk(new Date()),h="";for(var n=0;n<7;n++){var d=new Date(W[0].getFullYear(),W[0].getMonth(),W[0].getDate()+n),k=dk(d),x=info(k),c=["wd"];
 if(x.type!=="office")c.push(x.type);else if(!x.we&&(x.i!=null||x.o!=null))c.push("done");else if(x.we)c.push("we");
-if(k===sel)c.push("sl");if(k===td)c.push("td");
-h+='<button class="'+c.join(" ")+'" data-d="'+k+'" aria-label="'+d.toLocaleDateString("es-ES",{weekday:"long",day:"numeric",month:"long"})+'"><small>'+"LMXJVSD"[n]+'</small><b>'+d.getDate()+'</b></button>'}return h}
+if(k===sel)c.push("sl");if(k===td)c.push("td");var pd=pendSt(k);if(pd)c.push("pend");
+h+='<button class="'+c.join(" ")+'" data-d="'+k+'" aria-label="'+d.toLocaleDateString("es-ES",{weekday:"long",day:"numeric",month:"long"})+(pd?" · sin fichar":"")+'"><small>'+"LMXJVSD"[n]+'</small><b>'+d.getDate()+'</b>'+(pd?'<i class="pb">!</i>':'')+'</button>'}return h}
 function shW(n){tmo=false;lensX=n>0?420:-80;var d=pk(sel);d.setDate(d.getDate()+n);sel=dk(d);cm=new Date(d.getFullYear(),d.getMonth(),1);ed=null;render()}
 function nsT(x){var c=(x.r.c||"").trim();if(!c)return"";return esc(c.length>26?c.slice(0,26)+"…":c)}
 var TLI={in:'<path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><path d="M10 17l5-5-5-5"/><path d="M15 12H3"/>',lunch:'<path d="M7 2v8a2 2 0 0 0 2 2v10M5 2v6M9 2v6"/><path d="M17 22V2c-2 1.5-3 4-3 7v4h3"/>',out:'<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/>'};
@@ -622,8 +687,8 @@ function kpH(x){var w=wkd(x),W=wk(sel),r=range(W[0],W[1]),df=x.w!=null?x.w-x.exp
 var k=function(l,v,c){return'<div class="kpi"><small>'+l+'</small><b class="'+(c||"")+'">'+v+'</b></div>'};
 return k("Trabajado",w!=null?hm(w):"—")+k("Saldo hoy",df!=null?csg(df):"—",df!=null?cls(df):"")}
 function ring(f,col,txt){var C=2*Math.PI*42;return'<div class="rgm"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="42" class="rt"/><circle cx="50" cy="50" r="42" class="rp" style="stroke:'+col+';stroke-dasharray:'+C.toFixed(1)+';stroke-dashoffset:'+(C*(1-Math.min(1,Math.max(0,f)))).toFixed(1)+'"/></svg><div class="rgc">'+txt+'</div></div>'}
-var TC={office:"var(--ac)",tele:"var(--tele)",vac:"var(--vac)",free:"var(--free)"},TS={vac:"Vac",free:"Fest"};
-var TI={office:'<rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 7h1M14 7h1M9 11h1M14 11h1M10 21v-4h4v4"/>',tele:'<path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-5h4v5"/>',vac:'<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',free:'<path d="M5 21V4"/><path d="M5 4h12l-2.5 4L17 12H5"/>'};var lo=false;function lsumT(x){return x.lr?x.l+" min":x.r.ls&&!x.r.le?"Desde las "+x.r.ls:"Sin registrar"}
+var TC={office:"var(--ac)",tele:"var(--tele)",vac:"var(--vac)",free:"var(--free)",extra:"var(--ext)"},TS={vac:"Vac",free:"Fest",extra:"Extra"};
+var TI={office:'<rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 7h1M14 7h1M9 11h1M14 11h1M10 21v-4h4v4"/>',tele:'<path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-5h4v5"/>',vac:'<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',free:'<path d="M5 21V4"/><path d="M5 4h12l-2.5 4L17 12H5"/>',extra:'<rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4M12 13v5M9.5 15.5h5"/>'};var lo=false;function lsumT(x){return x.lr?x.l+" min":x.r.ls&&!x.r.le?"Desde las "+x.r.ls:"Sin registrar"}
 function tin(id,v){return'<span class="tp"><input type="text" inputmode="numeric" enterkeyhint="done" maxlength="5" placeholder="hh:mm" autocomplete="off" id="'+id+'" value="'+v+'" aria-label="Escribir la hora"></span>'}
 function pt(s){s=s.replace(/[.,;hH]/g,":").replace(/:$/,"");var m=s.match(/^(\d{1,2})(?::(\d{1,2}))?$/),h,n;if(m){h=+m[1];n=m[2]==null?0:+m[2]}else{m=s.match(/^(\d{1,2})(\d{2})$/);if(!m)return null;h=+m[1];n=+m[2]}return h<24&&n<60?pad(h)+":"+pad(n):null}
 function bt(id,cb){var t=document.getElementById(id),w={value:t?t.value:""},k=null;if(!t)return;
@@ -658,28 +723,30 @@ function resH(x){if(x.w==null)return"";var df=x.w-x.exp;return'<div class="res">
 function wkH(){var W=wk(sel),r=range(W[0],W[1]),td=dk(new Date()),D=[],M=Math.max(S.settings.lj,S.settings.vi);
 for(var n=0;n<5;n++){var d=new Date(W[0].getFullYear(),W[0].getMonth(),W[0].getDate()+n),x=info(dk(d)),w=wkd(x);D.push([x,w]);if(w!=null)M=Math.max(M,w)}M*=1.08;
 var h='<div class="wkh"><div><h2>Esta semana</h2><div class="mut" style="font-size:13px">'+hm(r.w)+' de '+hm(r.tt)+'</div></div><div class="pill '+cls(r.sal)+'"><small>Saldo</small>'+csg(r.sal)+'</div></div><div class="wch">';
-D.forEach(function(e,n){var x=e[0],w=e[1],off=x.type==="vac"||x.type==="free",col=TC[x.type];
+D.forEach(function(e,n){var x=e[0],w=e[1],off=x.type==="vac"||x.type==="free"||x.type==="extra",col=TC[x.type];
 h+='<div class="wc'+(x.k===td?" td":"")+(x.k===sel?" sl":"")+'"><span class="wv">'+(off?TS[x.type]:w!=null?ft(w).replace(/^0/,""):"")+'</span><div class="wb">'+(off?'<i class="wf" style="height:100%;background:color-mix(in srgb,'+col+' 22%,transparent)"></i>':(w!=null?'<i class="wf" style="height:'+(w/M*100).toFixed(1)+'%;background:'+(w>=x.exp?col:'color-mix(in srgb,'+col+' 60%,transparent)')+'"></i>':'')+'<i class="wt" style="bottom:'+(x.exp/M*100).toFixed(1)+'%"></i>')+'</div><span class="wl">'+"LMXJV"[n]+'</span></div>'});
 return h+'</div>'}
 function live(){var x=info(sel),g=function(i){return document.getElementById(i)},a=g("bigw"),t=g("tlw"),k=g("kpw"),c=g("wkw"),n=g("nsum");if(a)a.innerHTML=bigH(x);if(t)t.innerHTML=tlH(x);if(k)k.innerHTML=kpH(x);if(c)c.innerHTML=wkH();if(n)n.innerHTML=nsT(x)}
-function perH(){var a=pk(S.settings.ps),b=pk(S.settings.pe),r=range(a,b),n=new Date(),L=Math.ceil((b-new Date(n.getFullYear(),n.getMonth(),n.getDate()))/864e5),f=function(d){return d.toLocaleDateString("es-ES",{day:"numeric",month:"short",year:"numeric"})};
+function finReal(){var b=pk(S.settings.pe),n=range(pk(S.settings.ps),b).nx,d=new Date(b);while(n>0){d.setDate(d.getDate()+1);var x=info(dk(d));if(!x.off)n--}return d}
+function perH(){var a=pk(S.settings.ps),b0=pk(S.settings.pe),r=range(a,b0),b=r.nx?finReal():b0,n=new Date(),L=Math.ceil((b-new Date(n.getFullYear(),n.getMonth(),n.getDate()))/864e5),f=function(d){return d.toLocaleDateString("es-ES",{day:"numeric",month:"short",year:"numeric"})};
 var V=S.settings.vac,qv=V-r.nv,T=S.settings.tele,h='<div class="tg2">';
 h+='<div class="st rgt">'+ring(V?r.nv/V:0,"var(--vac)",'<b class="'+(qv<0?"neg":"")+'">'+qv+'</b><small>quedan</small>')+'<div><small>Vacaciones</small><div class="sv2">'+r.nv+' de '+V+' días</div></div></div>';
-h+='<div class="st rgt">'+(T>0?ring(r.nt/T,"var(--tele)",'<b class="'+(T-r.nt<0?"neg":"")+'">'+(T-r.nt)+'</b><small>quedan</small>')+'<div><small>Teletrabajo</small><div class="sv2">'+r.nt+' de '+T+' días</div></div>':ring(0,"var(--tele)",'<b>'+r.nt+'</b><small>usados</small>')+'<div><small>Teletrabajo</small><div class="sv2">Sin límite</div></div>')+'</div></div>';
-h+='<div class="card"><h2>Periodo laboral</h2><div class="list"><div><span>Inicio</span><b>'+f(a)+'</b></div><div><span>Fin</span><b>'+f(b)+'</b></div><div><span>'+(L>0?"Días hasta el fin":"Estado")+'</span><b>'+(L>0?L:"Finalizado")+'</b></div><div><span>Saldo acumulado</span><b class="'+cls(r.sal)+'">'+fsg(r.sal)+'</b></div></div></div>';
+h+='<div class="st rgt">'+(T>0?ring(r.nt/T,"var(--tele)",'<b class="'+(T-r.nt<0?"neg":"")+'">'+(T-r.nt)+'</b><small>quedan</small>')+'<div><small>Teletrabajo</small><div class="sv2">'+r.nt+' de '+T+' días</div></div>':ring(0,"var(--tele)",'<b>'+r.nt+'</b><small>usados</small>')+'<div><small>Teletrabajo</small><div class="sv2">Sin límite</div></div>')+'</div>';
+h+='<div class="st xtile"><span class="xic">'+sv(TI.extra)+'</span><div class="xtx"><small>Extraordinarios</small><b>'+r.nx+(r.nx===1?' día':' días')+'</b><div class="sv2 mut">'+(r.nx?'Se suman al final del contrato':'Sin días extraordinarios')+'</div></div></div></div>';
+h+='<div class="card"><h2>Periodo laboral</h2><div class="list"><div><span>Inicio</span><b>'+f(a)+'</b></div><div><span>'+(r.nx?"Fin del contrato":"Fin")+'</span><b>'+f(b0)+'</b></div>'+(r.nx?'<div><span>Fin con extraordinarios <small class="mut">(+'+r.nx+')</small></span><b class="xend">'+f(b)+'</b></div>':'')+'<div><span>'+(L>0?"Días hasta el fin":"Estado")+'</span><b>'+(L>0?L:"Finalizado")+'</b></div><div><span>Saldo acumulado</span><b class="'+cls(r.sal)+'">'+fsg(r.sal)+'</b></div></div></div>';
 return h}
 function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}
 function vCal(){
 var y=cm.getFullYear(),m=cm.getMonth(),first=(new Date(y,m,1).getDay()+6)%7,n=new Date(y,m+1,0).getDate(),td=dk(new Date());
-var h='<div class="mnv"><button data-a="pm" aria-label="Mes anterior">'+sv('<path d="M15 6l-6 6 6 6"/>')+'</button><div class="mnt">'+cm.toLocaleDateString("es-ES",{month:"long",year:"numeric"})+'</div><button data-a="nm" aria-label="Mes siguiente">'+sv('<path d="M9 6l6 6-6 6"/>')+'</button></div>'+(msel?'<div class="mbar"><span>Toca los días que quieras marcar</span><button class="ghost" data-a="mcan">Cancelar</button></div>':'')+'<div class="card"><div class="cal">';
+var h='<div class="mnv"><button data-a="pm" aria-label="Mes anterior">'+sv('<path d="M15 6l-6 6 6 6"/>')+'</button><div class="mnt">'+cm.toLocaleDateString("es-ES",{month:"long",year:"numeric"})+'</div><button data-a="nm" aria-label="Mes siguiente">'+sv('<path d="M9 6l6 6-6 6"/>')+'</button></div>'+(function(){var a=dk(new Date(cm.getFullYear(),cm.getMonth(),1)),b=dk(new Date(cm.getFullYear(),cm.getMonth()+1,0)),L=pendList(a,b);return msel?'':pbH(L.length,L.length+(L.length===1?" día sin fichar":" días sin fichar")+" en "+cm.toLocaleDateString("es-ES",{month:"long"}),"cpnext")})()+(msel?'<div class="mbar"><span>Toca los días que quieras marcar</span><button class="ghost" data-a="mcan">Cancelar</button></div>':'')+'<div class="card"><div class="cal">';
 ["L","M","X","J","V","S","D"].forEach(function(c){h+='<div class="h">'+c+'</div>'});
 for(var i=0;i<first;i++)h+="<span></span>";
 for(var d=1;d<=n;d++){var k=y+"-"+pad(m+1)+"-"+pad(d),x=info(k),c=[];
 if(x.we&&x.type==="office")c.push("we");else if(x.type!=="office")c.push(x.type);
-if(x.type==="office"&&!x.we&&(x.i!=null||x.o!=null))c.push("done");if(x.r.c)c.push("note");if(k===td)c.push("today");if(msel&&picks.indexOf(k)>-1)c.push("pick");
-h+='<button data-d="'+k+'" class="'+c.join(" ")+'">'+d+'</button>'}
-h+='</div><div class="leg"><span><i style="background:color-mix(in srgb,var(--ac) 20%,transparent)"></i>Oficina</span><span><i style="background:color-mix(in srgb,var(--tele) 20%,transparent)"></i>Teletrabajo</span><span><i style="background:color-mix(in srgb,var(--vac) 20%,transparent)"></i>Vacaciones</span><span><i style="background:color-mix(in srgb,var(--free) 22%,transparent)"></i>Festivo</span><span><i class="lgn"></i>Con nota · mantén pulsado para verla</span></div></div>';
-if(msel){var TT={office:"Oficina",tele:"Teletrabajo",vac:"Vacaciones",free:"Festivo"};h+='<div class="msb"><div class="msn">'+(picks.length?picks.length+(picks.length===1?" día seleccionado":" días seleccionados")+" · márcalos como:":"Ningún día seleccionado")+'</div><div class="mst">'+Object.keys(TT).map(function(t){return'<button data-mt="'+t+'" class="mt-'+t+'"'+(picks.length?'':' disabled')+'>'+sv(TI[t])+'<span>'+TT[t]+'</span></button>'}).join("")+'</div></div>'}
+if(x.type==="office"&&!x.we&&(x.i!=null||x.o!=null))c.push("done");if(x.r.c)c.push("note");if(k===td)c.push("today");if(msel&&picks.indexOf(k)>-1)c.push("pick");var pd=pendSt(k);if(pd)c.push("pend");
+h+='<button data-d="'+k+'" class="'+c.join(" ")+'"'+(pd?' aria-label="'+d+' · sin fichar"':'')+'>'+d+(pd?'<i class="pb">!</i>':'')+'</button>'}
+h+='</div><div class="leg"><span><i style="background:color-mix(in srgb,var(--ac) 20%,transparent)"></i>Oficina</span><span><i style="background:color-mix(in srgb,var(--tele) 20%,transparent)"></i>Teletrabajo</span><span><i style="background:color-mix(in srgb,var(--vac) 20%,transparent)"></i>Vacaciones</span><span><i style="background:color-mix(in srgb,var(--free) 22%,transparent)"></i>Festivo</span><span><i style="background:color-mix(in srgb,var(--ext) 22%,transparent)"></i>Extraordinario</span><span><i class="lgn"></i>Con nota</span><span><i class="lgp"></i>Sin fichar</span></div></div>';
+if(msel){var TT={office:"Oficina",tele:"Teletrabajo",vac:"Vacaciones",free:"Festivo",extra:"Extra"};h+='<div class="msb"><div class="msn">'+(picks.length?picks.length+(picks.length===1?" día seleccionado":" días seleccionados")+" · márcalos como:":"Ningún día seleccionado")+'</div><div class="mst">'+Object.keys(TT).map(function(t){return'<button data-mt="'+t+'" class="mt-'+t+'"'+(picks.length?'':' disabled')+'>'+sv(TI[t])+'<span>'+TT[t]+'</span></button>'}).join("")+'</div></div>'}
 else h+='<div class="mbc"><p class="mut">Toca un día para ver su resumen o cambiar su tipo.</p><button class="mbr" data-a="mon">'+sv('<rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4M9 15l2 2 4-4"/>')+'Marcar días</button></div>';return h}
 function vRes(){
 var t=new Date(),x=info(dk(t)),W=wk(dk(t)),rw=range(W[0],W[1]),y=t.getFullYear(),mo=t.getMonth(),rm=range(new Date(y,mo,1),new Date(y,mo+1,0)),ry=range(new Date(y,0,1),new Date(y,11,31)),wd=wkd(x);
@@ -692,9 +759,9 @@ for(var d=1;d<=n;d++){var z=info(dk(new Date(ry2,rmo2,d))),w=wkd(z);D.push([z,w]
 h+='<div class="mnv"><button data-a="rpm" aria-label="Mes anterior">'+sv('<path d="M15 6l-6 6 6 6"/>')+'</button><div class="mnt">'+mnY+'</div><button data-a="rnm" aria-label="Mes siguiente">'+sv('<path d="M9 6l6 6-6 6"/>')+'</button></div>';
 h+='<div class="card"><div class="wkh"><div><h2>Horas del mes</h2><div class="mut" style="font-size:13px">'+hm(rm.w)+' de '+hm(rm.tt)+'</div></div><div class="pill '+cls(rm.sal)+'"><small>Saldo</small>'+csg(rm.sal)+'</div></div><div class="mch"><i class="mt" style="bottom:'+(S.settings.lj/M*100).toFixed(1)+'%"></i>';
 D.forEach(function(e){var z=e[0],w=e[1],c=TC[z.type],st;
-if(z.we&&z.type==="office")st='height:0';else if(z.type==="vac"||z.type==="free")st='height:6px;background:'+c;else if(w!=null)st='height:'+(w/M*100).toFixed(1)+'%;background:'+(w>=z.exp?c:'color-mix(in srgb,'+c+' 60%,transparent)');else st='height:2px;background:var(--line)';
+if(z.we&&z.type==="office")st='height:0';else if(z.type==="vac"||z.type==="free"||z.type==="extra")st='height:6px;background:'+c;else if(w!=null)st='height:'+(w/M*100).toFixed(1)+'%;background:'+(w>=z.exp?c:'color-mix(in srgb,'+c+' 60%,transparent)');else st='height:2px;background:var(--line)';
 h+='<span class="mb'+(z.k===td?" td":"")+'" style="'+st+'"></span>'});
-h+='</div><div class="mx"><span>1</span><span>15</span><span>'+n+'</span></div><div class="leg"><span><i style="background:var(--ac)"></i>Oficina</span><span><i style="background:var(--tele)"></i>Teletrabajo</span><span><i style="background:var(--vac)"></i>Vacaciones</span><span><i style="background:var(--free)"></i>Festivo</span></div></div>';
+h+='</div><div class="mx"><span>1</span><span>15</span><span>'+n+'</span></div><div class="leg"><span><i style="background:var(--ac)"></i>Oficina</span><span><i style="background:var(--tele)"></i>Teletrabajo</span><span><i style="background:var(--vac)"></i>Vacaciones</span><span><i style="background:var(--free)"></i>Festivo</span><span><i style="background:var(--ext)"></i>Extraordinario</span></div></div>';
 var av=function(s,n){return n?ft(Math.round(s/n)):"--:--"};
 var sm=function(l,v){return'<div class="kpi"><small>'+l+'</small><b>'+v+'</b></div>'};
 h+='<h2 style="margin:4px 4px 10px">Estadísticas de '+mn+'</h2><div class="kpis">'+sm("Entrada media",av(rm.si,rm.n))+sm("Salida media",av(rm.so,rm.n))+sm("Jornada media",rm.n?hm(rm.w/rm.n):"--")+sm("Oficina",rm.no+" d")+sm("Teletrabajo",rm.nt+" d")+sm("Vacaciones",rm.nv+" d")+'</div>';
@@ -738,6 +805,8 @@ if(a==="prev"||a==="next"){ed=null;d=pk(sel);d.setDate(d.getDate()+(a==="next"?1
 else if(a==="rpm"||a==="rnm"){var b0=rmo||new Date(new Date().getFullYear(),new Date().getMonth(),1);rmo=new Date(b0.getFullYear(),b0.getMonth()+(a==="rnm"?1:-1),1)}
 else if(a==="mon"){msel=true;picks=[]}
 else if(a==="mcan"){msel=false;picks=[]}
+else if(a==="pnext"){var L=pendList().reverse(),ix=L.indexOf(sel),nk=L[(ix+1)%L.length];if(nk){var nd=pk(nk);if(wk(nk)[0].getTime()!==wk(sel)[0].getTime())lensX=null;sel=nk;ed=null;cm=new Date(nd.getFullYear(),nd.getMonth(),1)}}
+else if(a==="cpnext"){var L2=pendList(dk(new Date(cm.getFullYear(),cm.getMonth(),1)),dk(new Date(cm.getFullYear(),cm.getMonth()+1,0)));if(L2.length){openDay(L2[L2.length-1]);return}}
 else if(a==="pm")cm=new Date(cm.getFullYear(),cm.getMonth()-1,1);
 else if(a==="nm")cm=new Date(cm.getFullYear(),cm.getMonth()+1,1);
 else if(a==="today"){sel=dk(new Date());var n=new Date();cm=new Date(n.getFullYear(),n.getMonth(),1)}
